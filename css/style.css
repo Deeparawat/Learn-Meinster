@@ -1,0 +1,155 @@
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url('../fonts/Roboto-Regular.eot');
+	src: local('☺'), url('../fonts/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto-Regular.ttf') format('truetype'), url('../fonts/Roboto-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.eot");
+    src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/Flaticon.woff2") format("woff2"),
+         url("../fonts/Flaticon.woff") format("woff"),
+         url("../fonts/Flaticon.ttf") format("truetype"),
+         url("../fonts/Flaticon.svg#Flaticon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+      font-family: "Flaticon";
+      src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+    }
+  }
+  
+  [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+  [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+    font-family: Flaticon;
+          font-size: 30px;
+  font-style: normal;
+  }
+  
+.flaticon-microphone:before { content: "\f100"; }
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{font-family:"sans-serif " ; font-size:bold; font-weight:10%; background-color: #deceef;}
+header {
+    height: 100px;
+    background:#b787f2;
+    color: #2c0329;
+    text-align: center;
+    line-height: 60px;
+    font-weight: bolder;
+    font-size: 30px;
+    box-shadow: 10px 0 5px #e3d0dd;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+h1{
+    color:#fefefe;;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    padding-top: 60px;
+
+}
+.main {
+    width: 100%;
+    float: left;
+    margin-top: 60px;
+    padding: 30px 0;
+}
+.main button {
+    background: hwb(0 4% 34%);
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #666;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.main button:focus{outline: none;}
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+.user-area, .chatbot-area {
+    width: 20%;
+    height: calc(100vh - 20px);
+    margin-right: 65px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index:-1;
+}
+.chatbot-area {
+    float: right;
+    right: 25px;
+    left: auto;
+   
+}
+.user-area img, .chatbot-area img 
+{
+    padding-bottom: 70%;
+    width: auto
+}
+.user-area img{left: 0;}
+.chatarea-main {
+    width: 42%;
+    margin: 0 auto;
+}
+.chatarea-outer {
+    width: 100%;
+    float: left;
+}
+.chatbot-area .chatarea-main{float: left;}
+.chatarea.user {
+    float: right;
+    width: 40%;
+    padding: 20px 0;
+}
+
+.chatarea-inner {
+    float: left;
+    width: 60%;
+    padding: 10px;
+    color: #fff;
+    position: relative;
+    margin: 5px 0;
+}
+.chatarea-inner.user{
+    background: #6522A4;
+}
+.chatarea-inner.chatbot{
+    background: #9bb3db;
+    float: right;
+}
+.chatarea-inner.user:before {
+    content: '';
+    position: absolute;
+    border-right: 20px solid #6522A4;
+    border-top: 20px solid transparent;
+    border-bottom: 0px solid transparent;
+    bottom: 0;
+    left: -20px;
+}
+.chatarea-inner.chatbot:before {
+    content: '';
+    position: absolute;
+    border-left: 20px solid #9bb3db;
+    border-top: 20px solid transparent;
+    border-bottom: 0px solid transparent;
+    bottom: 0;
+    right: -20px;
+}
+
+.chatbot-area .chatarea-inner{float: left;}
+
